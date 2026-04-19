@@ -1,0 +1,28 @@
+# Compiled objects and executables
+*.o
+*.out
+*.exe
+*.class
+*.so
+*.dylib
+
+# macOS
+.DS_Store
+*.dSYM/
+
+# Build directories
+bin/
+build/
+dist/
+
+# Editors & caches
+.vscode/
+*~ 
+*.swp
+
+# Python
+__pycache__/
+*.pyc
+
+# Logs
+*.log
