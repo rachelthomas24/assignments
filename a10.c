@@ -4,7 +4,7 @@ int main(){
     int c,a,b;
     printf("enter two numbers *second will not be used in factorial\n");
     scanf("%d%d",&a,&b);
-    printf("MENU: 1-ADDITION\n2-SUBTRACTION\n3-MULTIPLICATION\n4-DIVISION\n5-POWER\n6-FACTORIAL\n7-PRIME FACTORS\n");
+    printf("MENU: 1-ADDITION\n2-SUBTRACTION\n3-MULTIPLICATION\n4-DIVISION\n5-POWER\n6-FACTORIAL\n");
     printf("enter your choice\n");
     scanf("%d",&c);
     switch(c){
@@ -35,30 +35,6 @@ int main(){
         printf("factorial=%d\n",fact);
         }
         break;
-        case 7:
-        {
-            int temp = a;
-            if (temp == 0) { printf("0 has no finite prime factorization\n"); break; }
-            if (temp < 0) { printf("-1 "); temp = -temp; }
-            printf("prime factors are: ");
-            while (temp % 2 == 0) {
-                printf("%d ", 2);
-                temp = temp / 2;
-            }
-
-            for (int i = 3; (long long)i * i <= temp; i += 2) {
-                while (temp % i == 0) {
-                    printf("%d ", i);
-                    temp = temp / i;
-                }
-            }
-
-            if (temp > 2) {
-                printf("%d", temp);
-            }
-            printf("\n");
-            break;
-        }
         default:
         printf("invalid input\n");
     }
